@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Resume</title>
+    <style>
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes slideIn {
+            from { transform: translateY(-50px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+            40% { transform: translateY(-30px); }
+            60% { transform: translateY(-15px); }
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        header {
+            background: #35424a;
+            color: #ffffff;
+            padding-top: 30px;
+            min-height: 70px;
+            border-bottom: #e8491d 3px solid;
+            animation: slideIn 1s ease-in-out;
+        }
+
+        header a {
+            color: #ffffff;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 16px;
+        }
+
+        header ul {
+            padding: 0;
+            list-style: none;
+        }
+
+        header li {
+            float: left;
+            display: inline;
+            padding: 0 20px;
+        }
+
+        header #branding {
+            float: left;
+        }
+
+        header #branding h1 {
+            margin: 0;
+        }
+
+        header #profile-pic {
+            float: right;
+            margin-top: 10px;
+            animation: bounce 2s infinite;
+        }
+
+        header #profile-pic img {
+            border-radius: 50%;
+            height: 100px;
+            width: 100px;
+        }
+
+        header nav {
+            float: right;
+            margin-top: 10px;
+        }
+
+        #showcase {
+            min-height: 400px;
+            background: #35424a;
+            color: #ffffff;
+            text-align: center;
+            padding-top: 100px;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        #showcase h1 {
+            font-size: 55px;
+            margin-top: 0;
+        }
+
+        #showcase p {
+            font-size: 20px;
+        }
+
+        #main {
+            padding: 20px;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        .section-title {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .section {
+            padding: 20px;
+            background: #ffffff;
+            margin: 20px 0;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            animation: slideIn 1s ease-in-out;
+        }
+
+        .section h2 {
+            margin-top: 0;
+        }
+
+        footer {
+            background: #35424a;
+            color: #ffffff;
+            text-align: center;
+            padding: 30px 0;
+            margin-top: 20px;
+            animation: fadeIn 2s ease-in-out;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div id="branding">
+                <h1><span class="highlight">R.S. Akul Balakrishnan</span></h1>
+            </div>
+            <div id="profile-pic">
+                <img src="path_to_your_image.jpg" alt="Profile Picture">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#courses">Courses</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="showcase">
+        <div class="container">
+            <h1>Welcome to My Resume</h1>
+            <p>Professional Summary and Personal Information</p>
+        </div>
+    </section>
+
+    <div id="main" class="container">
+        <section id="about" class="section">
+            <h2 class="section-title">About Me</h2>
+            <p>A highly motivated and enthusiastic graduate in Bachelor's Degree in Engineering. I am eager to learn from seasoned professionals to improve my skills which will utilize my excellent communication and technical skills. My dedication and hard work towards my work will be an asset to the team.</p>
+        </section>
+
+        <section id="experience" class="section">
+            <h2 class="section-title">Experience</h2>
+            <h3>Innovation and Entrepreneurship Development Centre [MEC]</h3>
+            <ul>
+                <li>Volunteer- 2021-22</li>
+            </ul>
+
+            <h3>Electronics Club [MEC]</h3>
+            <ul>
+                <li>Management Team Lead- 2022-23</li>
+            </ul>
+
+            <h3>Electronics Club [MEC]</h3>
+            <ul>
+                <li>Management Team Lead- 2023-24</li>
+            </ul>
+
+            <h3>Auxillium Club [MEC]</h3>
+            <ul>
+                <li>Finance Team Lead- 2023-24</li>
+            </ul>
+        </section>
+
+        <section id="projects" class="section">
+            <h2 class="section-title">Key Projects</h2>
+            <ul>
+                <li>Project 1: Robotic arm controlled using potentiometers.</li>
+                <li>Project 2: Gesture-controlled robotic arm.</li>
+                <li>Project 3: Comfort Jacket for ASD [collaborated with NISH & first runner up for SIGHT by UST Global].</li>
+            </ul>
+        </section>
+
+        <section id="courses" class="section">
+            <h2 class="section-title">Courses Attended</h2>
+            <ul>
+                <li>Basics of Python by UST Global</li>
+                <li>Basics of AI & ML by Keltron</li>
+            </ul>
+        </section>
+
+        <section id="education" class="section">
+            <h2 class="section-title">Education</h2>
+            <h3>Bachelor's Degree in Engineering</h3>
+            <p>Electronics & Communication Engineering</p>
+            <p>Marian College of Engineering - 2020-24</p>
+
+            <h3>Grade School</h3>
+            <p>Class: UKG-12 [ISC]</p>
+            <p>Loyola School - 2007-20</p>
+        </section>
+
+        <section id="skills" class="section">
+            <h2 class="section-title">Skills</h2>
+            <ul>
+                <li>Management skills</li>
+                <li>Problem solving</li>
+                <li>Communication skills</li>
+                <li>Leadership</li>
+                <li>Presentation skills</li>
+                <li>Critical thinking</li>
+                <li>Teamwork</li>
+                <li>Pressure management</li>
+            </ul>
+        </section>
+
+        <section id="contact" class="section">
+            <h2 class="section-title">Contact</h2>
+            <p>Email: akulbalakrishnan2002@gmail.com</p>
+         
+        </section>
+    </div>
+
+    <footer>
+        <p>Copyright &copy; 2024 Akul Balakrishnan</p>
+    </footer>
+</body>
+</html>
